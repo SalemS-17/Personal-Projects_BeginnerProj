@@ -30,6 +30,7 @@ def main():
 def encode(str, key):
     tsr = ""
     str = str.upper()
+    str = str.replace(" ", "")
     for char in str:
         temp = ord(char)
         if temp + key > 90:
